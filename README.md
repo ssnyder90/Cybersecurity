@@ -6,7 +6,7 @@ The files in this repository are a collection of projects I worked on during my 
 The folder contents are as listed below:
 
 ### Ansible
-This folder contains config files and yaml playbooks for setting up an **ELK** Stack. The sub-folders are as follow:
+This folder contains config files and yaml playbooks for setting up an **ELK** Stack. The sub-folders are as follows:
 
 - **Files**: Contains config files for both **Filebeat** and **Metricbeat**
 - **Playbooks**: Contains all the playbooks for Ansible to deploy the **ELK** stack, **Filebeat**, **Metricbeat** and **DVWA**.
