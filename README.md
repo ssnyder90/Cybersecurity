@@ -10,7 +10,7 @@ This folder contains config files and yaml playbooks for setting up an **ELK** S
 
 - **Files**: Contains config files for both **Filebeat** and **Metricbeat**
 - **Playbooks**: Contains all the playbooks for Ansible to deploy the **ELK** stack, **Filebeat**, **Metricbeat** and **DVWA**.
-- **README**: Contains a thorough [README](https://www.github.com/ssnyder90/Cybersecurity/Ansible/README/README.md) about the **ELK** stack and how to deploy it.
+- **README**: Contains a thorough [README](Ansible/README/README.md) about the **ELK** stack and how to deploy it.
 
 
 ### Diagrams
