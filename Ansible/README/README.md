@@ -39,7 +39,7 @@ In addition to the above, Azure has provisioned a load balancer in front of the 
 
 The machines on the internal netwrok are not exposed to the public Internet.
 
-Only the JumpBox and ELK machines can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses: 98.176.127.243
+Only the JumpBox and ELK machines can accept connections from the Internet. Access to these machines is only allowed from the following IP addresses: 98.176.127.243
 
 Machines within the network can only be accessed by each other.
 
