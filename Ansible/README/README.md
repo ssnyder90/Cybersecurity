@@ -4,7 +4,7 @@ The files in this repository were used to configure the network depicted below.
 
 ![](Images/NetworkMap.png)
 
-These files have been tested and used to generate a like ELK deployment on Azure. They can be used to recreate the entire deployment pictured above.
+These files have been tested and used to generate an ELK deployment on Azure. They can be used to recreate the entire deployment pictured above.
 
 This document contains the following details:
 - Description of the Topology
@@ -17,7 +17,7 @@ This document contains the following details:
 
 ## Description of the Topology
 
-The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the "D*mn Vulnerable Web Application."
+The main purpose of this network is to expose a load-balanced and monitored instance of **DVWA**, the "D*mn Vulnerable Web Application."
 
 Load balancing ensures that the application will be highly available, in addition to restricting inbound access to the network. The load balancer ensures that incoming traffic will be shared by both vulnerable web servers. Access controls will ensure that only authorized users --- namely, ourselves --- will be able to connect in the first place.
 
