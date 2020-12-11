@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-(Images/NetworkMap.png)
+![](Images/NetworkMap.png)
 
 These files have been tested and used to generate a like ELK deployment on Azure. They can be used to recreate the entire deployment pictured above.
 
