@@ -20,4 +20,4 @@ This folder contains Network Diagrams I mapped out of the **ELK**/**DVWA** serve
 
 ### Linux
 
-This folder contains numerous *Linux* bash scripts I created during the program.
+This folder contains numerous **Linux** bash scripts I created during the program.
