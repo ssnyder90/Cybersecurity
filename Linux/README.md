@@ -4,31 +4,31 @@ This README serves as a means to explain the scripts and what they do.
 
 ## Scripts
 
-##arguments.sh
+### arguments.sh
 A quick setup script for a new server - $1= log file
 
-###backup.sh
+### backup.sh
 Creates `/var/backup` if it doesn't exist. Create tar archive of `/home` saved to `/var/backup/home.tar`. Changes name to `home.01012020.tar`. Lists all files in `/var/backup`, including file sizes, saves to file `/var/backup/file_report.txt`. Prints how much free memory system has left, saves to `/var/backup/disk_report.txt`.
 
-###cleanup.sh
+### cleanup.sh
 Cleans up `/tmp` and `/var/tmp`, clears apt cache, clears thumbnail cache for sysadmin; instructor; and student.
 
-###for_loops.sh
+### for_loops.sh
 Simple for loop script that looks for "Hawaii" in variables and prints "Hawaii is the best!" if present.
 
-###ip_lookup.sh
+### ip_lookup.sh
 Prints the country of origin for a user-defined IP - $1= enter the ip address
 
-###log_analysis.sh
+### log_analysis.sh
 In a log file, replaces all instances of "INCORRECT_PASSWORD" with "ACCESS_DENIED" for congruency and prints to a new file "Update1_Combined_access_logs.txt". Takes data from "Update1_Combined_access_logs.txt," isolates the time and username of failed login attempts, and prints them to new file "Update2_Combined_access_logs.txt."
 
-###lynis_full_audit.sh
+### lynis_full_audit.sh
 Runs a full lynis audit and appends to /tmp/lynis.system_scan.log
 
-###lynis_partial_audit.sh
+### lynis_partial_audit.sh
 Runs a partial lynis audit on groups: Malware, authentication, networking, storage & filesystems. Appends to /tmp/lynis.partial_scan.log
 
-###sys_info.sh
+### sys_info.sh
 A quick system audit script that outputs to `$HOME/research/sys_info.txt.
 
 ###system.sh
