@@ -12,7 +12,7 @@ This document contains the following details:
 - ELK Configuration
   - Beats in Use
   - Machines Being Monitored
-- How to Use the Ansible BBuild
+- How to Use the Ansible Build
 
 
 ## Description of the Topology
@@ -21,7 +21,7 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 Load balancing ensures that the application will be highly available, in addition to restricting inbound access to the network. The load balancer ensures that incoming traffic will be shared by both vulnerable web servers. Access controls will ensure that only authorized users --- namely, ourselves --- will be able to connect in the first place.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the file systems of the VMs on the network, as well as watch system metrics, such as CPU usage; attempted SSH logins: ```sudo``` escalation failures; etc.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the file systems of the VMs on the network. As well as watch system metrics, such as CPU usage, attempted SSH logins, ```sudo``` escalation failures, etc.
 
 The configuration details of each machine may be found below.
 
@@ -37,7 +37,7 @@ In addition to the above, Azure has provisioned a load balancer in front of the 
 
 ## Access Policies
 
-The machines on the internal netwrok are not exposed to the public Internet.
+The machines on the internal network are not exposed to the public Internet.
 
 Only the JumpBox and ELK machines can accept connections from the Internet. Access to these machines is only allowed from the following IP addresses: 98.176.127.243
 
@@ -78,16 +78,17 @@ The playbooks implement the following tasks:
 ### filebeat-playbook.yml
 
 - Downloads and installs **Filebeat** to [webservers]
-- Copy's `/etc/ansible/files/filebeat-config.yml` to target machine's **Filebeat** configuration file
+- Copyies `/etc/ansible/files/filebeat-config.yml` to target machine's **Filebeat** configuration file
 - Enable, configure and setup **Filebeat**
 - Start **Filebeat**
 
 ### metricbeat-playbook.yml
 
 - Downloads and installs **Metricbeat** to [webservers]
-- Copy's `/etc/ansible/files/metricbeat-config.yml` to target machine's **Metricbeat** configuration file
+- Copyies `/etc/ansible/files/metricbeat-config.yml` to target machine's **Metricbeat** configuration file
 - Enable, configure and setup **Metricbeat**
 - Start **Metricbeat**
+
 The following screentshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
 (Images/dockerps.png)
@@ -104,7 +105,7 @@ We have installed the following beats on these machines:
 
 These Beats allow us to collect the following information from each machine:
 - **Filebeat**: Filebeat detects changes to the filesystem. Specifically, we use it to collect Apache logs.
-- **Metricbeat**: Metricbeat detecs changes in system metrics, such as CPU usage. We use it to detect SSH login attempts,, failed `sudo` escalations, and CPU/RAM statistics.
+- **Metricbeat**: Metricbeat detects changes in system metrics, such as CPU usage. We use it to detect SSH login attempts,, failed `sudo` escalations, and CPU/RAM statistics.
 
 ## Using the Playbooks
 In order to use the playbooks, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
